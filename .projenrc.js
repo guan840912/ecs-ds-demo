@@ -1,7 +1,7 @@
 const { AwsCdkTypeScriptApp } = require('projen');
 
 const project = new AwsCdkTypeScriptApp({
-  cdkVersion: '1.87.1',
+  cdkVersion: '1.88.0',
   authorName: 'Neil Kuan',
   jsiiFqn: 'projen.AwsCdkTypeScriptApp',
   name: 'ecs-demo',
@@ -12,6 +12,7 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-servicediscovery',
   ],
   dependabot: false,
+  defaultReleaseBranch: 'main',
 });
 
 const ignore = ['venv'];
