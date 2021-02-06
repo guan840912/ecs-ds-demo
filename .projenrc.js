@@ -15,6 +15,6 @@ const project = new AwsCdkTypeScriptApp({
   defaultReleaseBranch: 'main',
 });
 
-const ignore = ['venv'];
+const ignore = ['venv', '.github/dependabot.yml'];
 project.gitignore.exclude(...ignore);
 project.synth();
